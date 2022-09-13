@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.imtogif {
+  background-image: var(--view) + '.png';
+}
+
+.imtogif:hover {
+  background-image: var(--view) + '.gif'
+}
