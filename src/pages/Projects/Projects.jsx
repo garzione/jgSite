@@ -29,7 +29,7 @@ const Projects = ({ data, tech, setTech }) => {
       {data &&
         data.map((val, i) => {
           return (
-            <div style={divSty} key={val.n} onClick={() => setTech(data[i].t)}>
+            <div style={divSty} key={val.n}>
               {val.f && (
                 <img
                   src={require(`../../gifs/${val.f}.png`)}
@@ -49,16 +49,32 @@ const Projects = ({ data, tech, setTech }) => {
                 />
               )}
 
-              <h1 style={{ maxWidth: "100%" }}> {val.n} </h1>
+              <h1
+                onClick={() => setTech(data[i].t)}
+                style={{ maxWidth: "100%", cursor: "pointer" }}
+              >
+                {" "}
+                {val.n}{" "}
+              </h1>
               <div>
-                <FontAwesomeIcon
-                  style={{ marginRight: "10px" }}
-                  size="2x"
-                  icon={faSquareGithub}
+                <a
                   href={val.g}
-                />
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <FontAwesomeIcon
+                    style={{ marginRight: "10px" }}
+                    size="2x"
+                    icon={faSquareGithub}
+                    href={val.g}
+                  />
+                </a>
                 {val.s && (
-                  <FontAwesomeIcon size="2x" icon={faRocket} href={val.s} />
+                  <a
+                    href={val.s}
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <FontAwesomeIcon size="2x" icon={faRocket} href={val.s} />
+                  </a>
                 )}
               </div>
             </div>
