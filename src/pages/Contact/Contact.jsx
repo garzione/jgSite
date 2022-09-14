@@ -37,10 +37,11 @@ const Contact = () => {
       },
       body: JSON.stringify({ con }),
     };
-    fetch(process.env.REACT_APP_FETCH, requestOptions)
+    fetch(process.env.REACT_APP_FORM_FETCH, requestOptions)
       .then((response) => response.json())
       .then((json) => {
         if (json.hasOwnProperty("error")) {
+          console.log(json);
           toast.error("Error! Please try again.");
         } else {
           toast.success("Message sent!");
