@@ -41,7 +41,6 @@ const Contact = () => {
       .then((response) => response.json())
       .then((json) => {
         if (json.hasOwnProperty("error")) {
-          console.log(json);
           toast.error("Error! Please try again.");
         } else {
           toast.success("Message sent!");
@@ -73,7 +72,6 @@ const Contact = () => {
       default:
         break;
     }
-    console.log(con);
   };
 
   return (

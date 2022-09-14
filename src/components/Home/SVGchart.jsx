@@ -9,7 +9,6 @@ import {
 import {} from "@fortawesome/free-brands-svg-icons";
 
 const SVGchart = ({ dims }) => {
-  console.log(dims);
   const [circles, setCircles] = useState(null);
   const [center, setCenter] = useState(null);
   const svgz = [faScrewdriverWrench, faSignature, faPhone];
