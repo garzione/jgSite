@@ -1,50 +1,3 @@
-// import { useState } from 'react'
-// const HttpFpsi = () => {
-
-//     const [protocol, setProtocol] = useState('http')
-
-//     const formStyle = {
-//         marginRight: '20px',
-//         fontFamily: 'Anonymous Pro',
-//         'fontSize': '25px'
-
-//     }
-
-//     const onInputChange = (e) => {
-//         e.preventDefault()
-//         setProtocol(e.target.value)
-//     }
-
-//     return (
-//         <form style={ formStyle }>
-//             <div className="radio">
-//                 <label>
-//                     <input
-//                         type="radio"
-//                         value="http"
-//                         checked={ protocol === 'http' }
-//                         onChange={ onInputChange }
-//                     />
-//                     <b> Http / Web2 </b>
-//                 </label>
-//             </div>
-//             <div className="radio">
-//                 <label>
-//                     <input
-//                         type="radio"
-//                         value="fpsi"
-//                         checked={ protocol === 'fpsi' }
-//                         onChange={ onInputChange }
-//                     />
-//                     <b> Fpsi / Web3 </b>
-//                 </label>
-//             </div>
-//       </form>
-//     )
-// }
-
-// export default HttpFpsi
-
 import React, { useState } from "react";
 
 const HttpFpsi = () => {
@@ -93,7 +46,7 @@ const HttpFpsi = () => {
             checked={selected === "no"}
           />
           <label htmlFor="no" style={{ marginLeft: "5px" }}>
-            <b> Fpsi / Web3 </b>
+            <b> Ipfs / Web3 </b>
           </label>
         </div>
       </div>

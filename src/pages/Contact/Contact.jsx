@@ -120,7 +120,7 @@ const Contact = () => {
               id="message"
               as="textarea"
               rows={15}
-              placeholder="Conformity if the jailer of freedom and the enemy of growth."
+              placeholder="Conformity is the jailer of freedom and the enemy of growth."
               onChange={changeHandler}
             />
           </Form.Group>
