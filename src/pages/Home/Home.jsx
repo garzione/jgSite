@@ -73,7 +73,7 @@ const Home = () => {
               }}
             >
               This site is available in both web2 and web3 renditions. By
-              clicking the Fpsi radio button, you'll move to that version of the
+              clicking the Ipfs radio button, you'll move to that version of the
               site.
             </p>
           </div>
