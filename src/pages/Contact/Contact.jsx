@@ -37,7 +37,7 @@ const Contact = () => {
       },
       body: JSON.stringify({ con }),
     };
-    fetch(process.env.REACT_APP_FORM_FETCH, requestOptions)
+    fetch("https://" + process.env.REACT_APP_FORM_FETCH, requestOptions)
       .then((response) => response.json())
       .then((json) => {
         if (json.hasOwnProperty("error")) {
